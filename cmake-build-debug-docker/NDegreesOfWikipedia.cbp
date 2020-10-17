@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="NDegreesOfWikipedia"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\json-develop\;CMake Files\external\json-develop\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NDegreesOfWikipedia">
+				<Option output="/home/debug/CLion/cmake-build-debug-docker/NDegreesOfWikipedia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DJSON_USE_IMPLICIT_CONVERSIONS=1"/>
+					<Add directory="/home/debug/CLion/external/curl-master/include"/>
+					<Add directory="/home/debug/CLion/NDegreesOfWikipedia"/>
+					<Add directory="/home/debug/CLion/include"/>
+					<Add directory="/home/debug/CLion/external/json-develop/single_include"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/../../../../include/c++/9.3.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/../../../../include/c++/9.3.0/x86_64-alpine-linux-musl"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/../../../../include/c++/9.3.0/backward"/>
+					<Add directory="/usr/include/fortify"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 NDegreesOfWikipedia"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NDegreesOfWikipedia/fast">
+				<Option output="/home/debug/CLion/cmake-build-debug-docker/NDegreesOfWikipedia" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DJSON_USE_IMPLICIT_CONVERSIONS=1"/>
+					<Add directory="/home/debug/CLion/external/curl-master/include"/>
+					<Add directory="/home/debug/CLion/NDegreesOfWikipedia"/>
+					<Add directory="/home/debug/CLion/include"/>
+					<Add directory="/home/debug/CLion/external/json-develop/single_include"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/../../../../include/c++/9.3.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/../../../../include/c++/9.3.0/x86_64-alpine-linux-musl"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/../../../../include/c++/9.3.0/backward"/>
+					<Add directory="/usr/include/fortify"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-alpine-linux-musl/9.3.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 NDegreesOfWikipedia/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker/external/json-develop"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker/external/json-develop"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/home/debug/CLion/cmake-build-debug-docker/external/json-develop"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/debug/CLion/cmake-build-debug-docker/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/debug/CLion/src/Graph.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/src/WebCrawler.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/src/WebCrawlerManager.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/src/main.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/external/json-develop/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\json-develop\"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/external/json-develop/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\external\json-develop\cmake\"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/external/json-develop/cmake/nlohmann_jsonConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\external\json-develop\cmake\"/>
+		</Unit>
+		<Unit filename="/home/debug/CLion/external/json-develop/cmake/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\external\json-develop\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

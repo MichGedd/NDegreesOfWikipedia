@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-msgpack.dir/src/unit-msgpack.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-msgpack   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

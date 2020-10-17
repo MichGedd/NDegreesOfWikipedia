@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-json_pointer.dir/src/unit-json_pointer.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-json_pointer   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

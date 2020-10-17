@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-merge_patch.dir/src/unit-merge_patch.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-merge_patch   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

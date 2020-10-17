@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-udt.dir/src/unit-udt.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-udt   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

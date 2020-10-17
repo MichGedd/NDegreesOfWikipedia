@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="NDegreesOfWikipedia"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\json-develop\;CMake Files\external\json-develop\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NDegreesOfWikipedia">
+				<Option output="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/NDegreesOfWikipedia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DJSON_USE_IMPLICIT_CONVERSIONS=1"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/curl-master/include"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/NDegreesOfWikipedia"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/include"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/json-develop/single_include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 NDegreesOfWikipedia"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NDegreesOfWikipedia/fast">
+				<Option output="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/NDegreesOfWikipedia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DJSON_USE_IMPLICIT_CONVERSIONS=1"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/curl-master/include"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/NDegreesOfWikipedia"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/include"/>
+					<Add directory="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/json-develop/single_include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 NDegreesOfWikipedia/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/micha/CLionProjects/NDegreesOfWikipedia/cmake-build-debug-local/external/json-develop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/src/Graph.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/src/WebCrawler.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/src/WebCrawlerManager.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/src/main.cpp">
+			<Option target="NDegreesOfWikipedia"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/json-develop/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\json-develop\"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/json-develop/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\external\json-develop\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/json-develop/cmake/nlohmann_jsonConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\external\json-develop\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/micha/CLionProjects/NDegreesOfWikipedia/external/json-develop/cmake/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\external\json-develop\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

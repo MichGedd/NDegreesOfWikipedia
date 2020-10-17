@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-class_parser.dir/src/unit-class_parser.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-class_parser   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

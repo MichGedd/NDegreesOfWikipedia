@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-constructor1.dir/src/unit-constructor1.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-constructor1   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

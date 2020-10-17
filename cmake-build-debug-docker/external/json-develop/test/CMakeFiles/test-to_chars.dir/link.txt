@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-to_chars.dir/src/unit-to_chars.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-to_chars   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

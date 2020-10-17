@@ -1,0 +1,5 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/debug/CLion
+-- Using the single-header code from /home/debug/CLion/external/json-develop/single_include/
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/debug/CLion/cmake-build-debug-docker

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-ordered_json.dir/src/unit-ordered_json.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-ordered_json   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

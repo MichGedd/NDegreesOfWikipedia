@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-alt-string.dir/src/unit-alt-string.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-alt-string   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

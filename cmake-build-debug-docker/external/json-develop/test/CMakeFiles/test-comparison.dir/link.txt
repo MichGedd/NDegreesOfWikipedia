@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/test-comparison.dir/src/unit-comparison.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-comparison   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 
