@@ -49,19 +49,14 @@ string WebCrawler::httpAndJSONParse(string wikiPage) {
         //TODO: implement failing on HTTP 404 and HTTP 5XX errors
     }
 
-    /**
-     * TODO: Implement NULL string when Wikipage does not exist in API.
-     * Test Case: https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&formatversion=2&page=Q42486#identifiers&amp;#124;Edit_this_at_Wikidata
-     * Function should return a NULL string, and scrape() should return NULL vector.  Node should NOT be added to graph
-     */
-
     json j;
 
     try {
         j = json::parse(this->buffer.memory);
         string s = j["parse"]["text"];
     } catch (nlohmann::json::type_error &error) {
-        cout << "Something went wrong!";
+        string s = "";
+        return s;
     }
 
     free(this->buffer.memory);
@@ -75,6 +70,11 @@ vector<string> WebCrawler::scrape(std::string html) {
     smatch m;
     regex r (R"(wiki\/(?!File:).*?(?=\"))");
     vector<string> returnVector;
+
+    if(html.empty())
+    {
+        return returnVector;
+    }
 
     while(regex_search(html, m, r)) {
         for(auto x:m) {
