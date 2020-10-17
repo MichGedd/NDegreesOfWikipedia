@@ -1,1 +1,0 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/test-iterators2.dir/src/unit-iterators2.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-iterators2   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

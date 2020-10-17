@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\test-wstring.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\test-wstring.dir/objects.a @CMakeFiles\test-wstring.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -Wl,--whole-archive CMakeFiles\test-wstring.dir/objects.a -Wl,--no-whole-archive -o test-wstring.exe -Wl,--out-implib,libtest-wstring.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test-wstring.dir\linklibs.rsp

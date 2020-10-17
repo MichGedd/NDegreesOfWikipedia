@@ -1,1 +1,0 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/test-cbor.dir/src/unit-cbor.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-cbor   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 

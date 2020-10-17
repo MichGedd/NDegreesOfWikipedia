@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2020.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\test-json_pointer.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\test-json_pointer.dir/objects.a @CMakeFiles\test-json_pointer.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\test-json_pointer.dir/objects.a -Wl,--no-whole-archive  -o test-json_pointer.exe -Wl,--out-implib,libtest-json_pointer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test-json_pointer.dir\linklibs.rsp

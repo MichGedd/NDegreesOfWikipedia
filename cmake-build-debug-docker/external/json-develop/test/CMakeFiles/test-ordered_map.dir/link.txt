@@ -1,1 +1,0 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/test-ordered_map.dir/src/unit-ordered_map.cpp.o CMakeFiles/doctest_main.dir/src/unit.cpp.o  -o test-ordered_map   -L/home/debug/CLion/external/curl-master/lib  -Wl,-rpath,/home/debug/CLion/external/curl-master/lib 
