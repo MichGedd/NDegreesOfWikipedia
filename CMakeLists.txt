@@ -7,6 +7,7 @@ set(CURL_LIBRARY ${CMAKE_SOURCE_DIR}/external/curl-master/lib)
 set(CURL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/external/curl-master/include)
 set(nlohmann_json_DIR "${CMAKE_SOURCE_DIR}/external/json-develop")
 set(JSON_BuildTests OFF CACHE INTERNAL "")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-z,stack-size=1000000")
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)

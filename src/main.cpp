@@ -1,5 +1,6 @@
 #include <iostream>
 #include <thread>
+#include <sys/resource.h>
 
 #include "WebCrawler.h"
 #include "WebCrawlerManager.h"
@@ -9,13 +10,14 @@ using namespace NDegreesOfWikipedia;
 
 int main() {
 
-    /*const uint maxThreads = thread::hardware_concurrency();
+    const u_int maxThreads = thread::hardware_concurrency();
 
-    int defaultThreads = min(maxThreads, (uint)4);
+    int defaultThreads = min(maxThreads, (u_int)6);
     int threadsToUse;
+
     string start, end;
 
-    cout << "Welcome to N Degrees of Wikipedia!" << endl;
+    /*cout << "Welcome to N Degrees of Wikipedia!" << endl;
     cout << "Type  the name of a Wikipedia article you want to start at and the wikipedia article" << endl;
     cout << "you would like to end at, and the program will calculate the path to get there!" << endl;
 
@@ -44,13 +46,14 @@ int main() {
         threadsToUse = stoi(buffer, nullptr);
         threadsToUse = threadsToUse <= 0 || threadsToUse > maxThreads ? defaultThreads : threadsToUse;
     } catch (invalid_argument &invalidArgument) {
-        cout << "Invalid characters!  ";
+        cout << "Invalid characters!";
         threadsToUse = defaultThreads;
     }
 
     cout << threadsToUse << " threads will be used." << endl;*/
 
-    WebCrawlerManager w("Professional_wrestling", "Electric_power", 6);
+    //WebCrawlerManager w("Professional_wrestling", "Electric_power", 6);
+    WebCrawlerManager w("Canada", "2007_Nobel_Peace_Prize", 6);
     w.run();
 
     return 0;

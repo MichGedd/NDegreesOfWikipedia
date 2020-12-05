@@ -3,6 +3,7 @@
 //
 
 #include "WebCrawlerManager.h"
+#include <time.h>
 
 using namespace std;
 using namespace NDegreesOfWikipedia;
@@ -15,6 +16,9 @@ WebCrawlerManager::WebCrawlerManager(string start, string end, int numThreads) :
 }
 
 void WebCrawlerManager::run() {
+    time_t timer;
+    double seconds;
+
     pthread_t threads[this->numThreads];
 
     int rc;
@@ -23,6 +27,7 @@ void WebCrawlerManager::run() {
 
     queue.push(graph.findNode(start));
 
+    time(&timer);
     for(int i = 0; i < this->numThreads; i++) {
         WebCrawler *c = new WebCrawler();
         ThreadData *data = new ThreadData;
@@ -51,6 +56,9 @@ void WebCrawlerManager::run() {
     for(int i = 0; i < this->numThreads; i++) {
         (void) pthread_join(threads[i], NULL);
     }
+
+    seconds = difftime(time(NULL), timer);
+    cout << "Search took " << seconds << " seconds" << endl;
 
     stack<Node *> path = this->graph.findPathToRoot(this->graph.findNode(this->end));
 

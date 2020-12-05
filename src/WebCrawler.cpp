@@ -14,6 +14,7 @@ WebCrawler::WebCrawler() {
     this->buffer.memory = (char *)malloc(1);
     this->buffer.size = 0;
     this->curl = curl_easy_init();
+    this->rgx = regex (R"(wiki\/(?!File:).*?(?=\"))", regex_constants::optimize);
 
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&buffer);
@@ -49,26 +50,25 @@ string WebCrawler::httpAndJSONParse(string wikiPage) {
         //TODO: implement failing on HTTP 404 and HTTP 5XX errors
     }
 
-    json j;
-
+    string s;
     try {
+        json j;
         j = json::parse(this->buffer.memory);
-        string s = j["parse"]["text"];
+        s = j["parse"]["text"];
     } catch (nlohmann::json::type_error &error) {
-        string s = "";
-        return s;
+        s = "";
     }
 
     free(this->buffer.memory);
     this->buffer.size = 0;
+    return s;
 
-    return j["parse"]["text"];
 }
 
 vector<string> WebCrawler::scrape(std::string html) {
     // REGEX statement: wiki\/(?!File:).*?(?=\\")
     smatch m;
-    regex r (R"(wiki\/(?!File:).*?(?=\"))");
+    // r (R"(wiki\/(?!File:).*?(?=\"))", regex_constants::optimize);
     vector<string> returnVector;
 
     if(html.empty())
@@ -76,7 +76,8 @@ vector<string> WebCrawler::scrape(std::string html) {
         return returnVector;
     }
 
-    while(regex_search(html, m, r)) {
+
+    while(regex_search(html, m, this->rgx)) {
         for(auto x:m) {
             string articleName = x.str().substr(5);
 
@@ -100,6 +101,7 @@ vector<string> WebCrawler::scrape(std::string html) {
 
         }
         html = m.suffix().str();
+
     }
 
     return returnVector;
