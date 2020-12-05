@@ -47,7 +47,7 @@ string WebCrawler::httpAndJSONParse(string wikiPage) {
     this->res = curl_easy_perform(this->curl);
 
     if(res != CURLE_OK) {
-        cout << "Critical Error: Unable to reach Wikimedia API.  cURL failed with error code " << res << ".  Closing program";
+        cout << "CRITICAL ERROR: Unable to reach Wikimedia API.  cURL failed with error code " << res << ".  Closing program" << endl;
         exit(1);
     }
 
@@ -64,6 +64,36 @@ string WebCrawler::httpAndJSONParse(string wikiPage) {
     this->buffer.size = 0;
     return s;
 
+}
+
+bool WebCrawler::webpageExists(std::string wikiPage) {
+    string url = "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&formatversion=2&page=";
+    url.append(wikiPage);
+
+    this->buffer.memory = (char *)malloc(1);
+    this->buffer.size = 0;
+
+    curl_easy_setopt(this->curl, CURLOPT_URL, url.c_str());
+    this->res = curl_easy_perform(this->curl);
+
+    if(res != CURLE_OK) {
+        cout << "WARNING: cURL failed with error code " << res << ".  Program may not work." << endl;
+        return false;
+    }
+
+    string s;
+    try {
+        json j;
+        j = json::parse(this->buffer.memory);
+        s = j["parse"]["text"];
+    } catch (nlohmann::json::type_error &error) {
+        return false;
+    }
+
+    free(this->buffer.memory);
+    this->buffer.size = 0;
+
+    return true;
 }
 
 vector<string> WebCrawler::scrape(std::string html) {

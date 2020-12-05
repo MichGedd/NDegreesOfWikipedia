@@ -14,10 +14,13 @@ int main() {
 
     int defaultThreads = min(maxThreads, (u_int)6);
     int threadsToUse;
+    int itr = 0;
 
     string start, end;
 
-    /*cout << "Welcome to N Degrees of Wikipedia!" << endl;
+    WebCrawler *testCrawler = new WebCrawler();
+
+    cout << "Welcome to N Degrees of Wikipedia!" << endl;
     cout << "Type  the name of a Wikipedia article you want to start at and the wikipedia article" << endl;
     cout << "you would like to end at, and the program will calculate the path to get there!" << endl;
 
@@ -29,11 +32,23 @@ int main() {
 
     cout << endl;
 
-    cout << "Which Wikipedia article would you like to start at?" << endl;
-    cin >> start;
+    do {
+        if(itr > 0)
+            cout << "That Wikipedia article threw an error in the Wikipedia API!  Please choose another article" << endl;
+        cout << "Which Wikipedia article would you like to start at?" << endl;
+        cin >> start;
+        itr++;
+    } while (!(testCrawler->webpageExists(start)));
 
-    cout << "Which Wikipedia article would you like end at?" << endl;
-    cin >> end;
+    itr = 0;
+
+    do {
+        if(itr > 0)
+            cout << "That Wikipedia article threw an error in the Wikipedia API!  Please choose another article" << endl;
+        cout << "Which Wikipedia article would you like end at?" << endl;
+        cin >> end;;
+        itr++;
+    } while (!(testCrawler->webpageExists(end)));
 
     cout << endl;
 
@@ -50,10 +65,11 @@ int main() {
         threadsToUse = defaultThreads;
     }
 
-    cout << threadsToUse << " threads will be used." << endl;*/
+    cout << threadsToUse << " threads will be used." << endl;
 
     //WebCrawlerManager w("Professional_wrestling", "Electric_power", 6);
-    WebCrawlerManager w("Canada", "2007_Nobel_Peace_Prize", 6);
+    //WebCrawlerManager w("Canada", "2007_Nobel_Peace_Prize", 6);
+    WebCrawlerManager w(start, end, threadsToUse);
     w.run();
 
     return 0;

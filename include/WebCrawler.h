@@ -23,7 +23,7 @@ namespace NDegreesOfWikipedia {
 
         [[noreturn]] void *run(void *threadid);
         static void *run_helper(void *threadData);
-        //std::string httpAndJSONParse(std::string wikiPage);
+        bool webpageExists(std::string wikiPage);
     private:
         struct CurlBuffer {
             char *memory;
