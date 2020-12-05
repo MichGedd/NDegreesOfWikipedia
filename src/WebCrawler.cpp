@@ -47,7 +47,8 @@ string WebCrawler::httpAndJSONParse(string wikiPage) {
     this->res = curl_easy_perform(this->curl);
 
     if(res != CURLE_OK) {
-        //TODO: implement failing on HTTP 404 and HTTP 5XX errors
+        cout << "Critical Error: Unable to reach Wikimedia API.  cURL failed with error code " << res << ".  Closing program";
+        exit(1);
     }
 
     string s;
@@ -66,9 +67,7 @@ string WebCrawler::httpAndJSONParse(string wikiPage) {
 }
 
 vector<string> WebCrawler::scrape(std::string html) {
-    // REGEX statement: wiki\/(?!File:).*?(?=\\")
     smatch m;
-    // r (R"(wiki\/(?!File:).*?(?=\"))", regex_constants::optimize);
     vector<string> returnVector;
 
     if(html.empty())
