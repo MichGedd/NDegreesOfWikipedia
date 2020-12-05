@@ -10,10 +10,12 @@
 #include <stack>
 
 namespace NDegreesOfWikipedia {
+
+    // Struct for graph nodes
     struct Node {
-        std::string value;
-        Node *parentNode;
-        std::vector<Node *> childrenNodes;
+        std::string value;  // Name of article
+        Node *parentNode;  // Pointer to parent node
+        std::vector<Node *> childrenNodes;  // List of pointers to child nodes
     };
 
     class Graph {
